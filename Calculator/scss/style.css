@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  outline: none;
+  border: none;
+  background-color: rgba(219, 215, 215, 0.48);
+}
+
+.text {
+  font-size: 66px;
+  font-weight: 600;
+  font-family: cursive;
+  color: #dd5624;
+  width: 480px;
+  height: 100px;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 5px 5px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.phone {
+  width: 360px;
+  height: 640px;
+  border-radius: 9px;
+  margin-top: 10px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: -6px -5px 5px -5px rgba(65, 63, 63, 0.5);
+          box-shadow: -6px -5px 5px -5px rgba(65, 63, 63, 0.5);
+}
+
+.phone .header {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.phone .header i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.phone .container {
+  padding: 20px;
+}
+
+.phone .container .display {
+  width: 100%;
+}
+
+.phone .container .display input {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 32px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.phone .container .display input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 30px;
+}
+
+.phone .container .display input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 30px;
+}
+
+.phone .container .display input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 30px;
+}
+
+.phone .container .display input::placeholder {
+  color: #fff;
+  font-size: 30px;
+}
+
+.phone .container .buttons {
+  border-top: 1px solid #867a7a;
+  padding: 15px 0px 0px;
+}
+
+.phone .container .buttons .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.phone .container .buttons .row button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  color: #9b9292;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 100%;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  font-weight: 500 !important;
+}
+
+.phone .container .buttons .row button:hover {
+  background-color: #00ff73;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  color: #fff !important;
+}
+
+.phone .container .buttons .row button.equal {
+  background-color: #ff8800;
+}
+
+.phone .container .buttons .row button.equal:hover {
+  background-color: #35e001;
+}
+
+.phone .container .buttons .button_color {
+  color: #ff8800 !important;
+}
+
+.phone .container .buttons .row1 button {
+  border-radius: 4px !important;
+  font-size: 16px;
+  color: #9e9999;
+}
+
+.phone .container .buttons .row .btn1 {
+  border-radius: 4px !important;
+  font-size: 16px;
+  color: #9e9999;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 550px;
+  height: 550px;
+  background-color: #272626;
+  border: 18px solid #272626;
+  -webkit-box-shadow: 0 -13px 13px rgba(255, 255, 255, 0.05), inset 0 -10px 10px rgba(255, 255, 255, 0.05), 0 -13px 13px rgba(0, 0, 0, 0.03), inset 0 10px 10px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 -13px 13px rgba(255, 255, 255, 0.05), inset 0 -10px 10px rgba(255, 255, 255, 0.05), 0 -13px 13px rgba(0, 0, 0, 0.03), inset 0 10px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  bottom: 49%;
+  left: 50%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 10;
+  -webkit-transform: translatex(-50%) rotate(calc(var(--rotation) * 10));
+          transform: translatex(-50%) rotate(calc(var(--rotation) * 10));
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  background-color: #4A4961;
+  z-index: 16;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-35%, 0%);
+          transform: translate(-35%, 0%);
+  border-radius: 50%;
+}
+
+.clock .hand.second {
+  width: 4px;
+  height: 37%;
+  background-color: #B07441;
+  z-index: 12;
+}
+
+.clock .hand.minute {
+  width: 5px;
+  height: 33%;
+  background-color: #7083BD;
+  z-index: 11;
+}
+
+.clock .hand.hour {
+  width: 7px;
+  height: 25%;
+  background-color: #6EAEF5;
+  z-index: 10;
+}
+
+.indicators div {
+  position: absolute;
+  width: 6px;
+  height: 28px;
+  border-radius: 4px;
+  background: #9D9D9D;
+}
+
+.indicators div:nth-child(1) {
+  -webkit-transform: rotate(30deg) translateY(-220px);
+          transform: rotate(30deg) translateY(-220px);
+}
+
+.indicators div:nth-child(2) {
+  -webkit-transform: rotate(60deg) translateY(-220px);
+          transform: rotate(60deg) translateY(-220px);
+}
+
+.indicators div:nth-child(3) {
+  background-color: #64E6EE;
+  -webkit-transform: rotate(90deg) translateY(-220px);
+          transform: rotate(90deg) translateY(-220px);
+}
+
+.indicators div:nth-child(4) {
+  -webkit-transform: rotate(120deg) translateY(-215px);
+          transform: rotate(120deg) translateY(-215px);
+}
+
+.indicators div:nth-child(5) {
+  -webkit-transform: rotate(150deg) translateY(-210px);
+          transform: rotate(150deg) translateY(-210px);
+}
+
+.indicators div:nth-child(6) {
+  background-color: #64E6EE;
+  -webkit-transform: rotate(180deg) translateY(-210px);
+          transform: rotate(180deg) translateY(-210px);
+}
+
+.indicators div:nth-child(7) {
+  -webkit-transform: rotate(210deg) translateY(-210px);
+          transform: rotate(210deg) translateY(-210px);
+}
+
+.indicators div:nth-child(8) {
+  -webkit-transform: rotate(240deg) translateY(-215px);
+          transform: rotate(240deg) translateY(-215px);
+}
+
+.indicators div:nth-child(9) {
+  background-color: #64E6EE;
+  -webkit-transform: rotate(270deg) translateY(-220px);
+          transform: rotate(270deg) translateY(-220px);
+}
+
+.indicators div:nth-child(10) {
+  -webkit-transform: rotate(300deg) translateY(-220px);
+          transform: rotate(300deg) translateY(-220px);
+}
+
+.indicators div:nth-child(11) {
+  -webkit-transform: rotate(330deg) translateY(-220px);
+          transform: rotate(330deg) translateY(-220px);
+}
+
+.indicators div:nth-child(12) {
+  background-color: #64E6EE;
+  -webkit-transform: rotate(360deg) translateY(-225px);
+          transform: rotate(360deg) translateY(-225px);
+}
+/*# sourceMappingURL=style.css.map */
